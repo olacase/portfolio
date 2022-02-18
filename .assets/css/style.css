@@ -100,6 +100,9 @@ width: 100%;
 text-align: center;
 border: none;
 }
+/* SUBHEADERSTYLE ENDS */
+
+/* ABOUT ME SECTION STYLE BEGINS */
 section#About-Me {
   display: flex;
   /* flex-wrap: wrap; */
@@ -115,7 +118,11 @@ section#About-Me {
   margin-right: 50px;
   text-align: right;
 }
-section#My-Work{
+/* ABOUT ME SECTION STYLE END */
+
+/* WORK SECTION STYLE BEGIN */
+
+/* section#My-Work{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -131,19 +138,50 @@ section#My-Work{
   display: flex;
   justify-content: space-between;
   padding: 40px 0px;
-  
+
 }
-nav runbud :hover{
   justify-content: center;
   align-items: center;
   padding: 40px 0px;
   background: green;
   border: none;
   text-align: center;
-  font-size: 35px;
-  /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../images/placeholder1.gif"); */
-  background: solid;
-      color: aquamarine;
-      border-radius: 15px;
-      text-shadow: none;
-}
+  font-size: 35px; */
+
+  .flex-item{
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1cm);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5cm;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  .section-work{border-right: 5px solid;
+    padding: 50px 25px;
+    margin-right: 50px;
+    text-align: right;
+  }
+  /* feature first portfolio item */
+  .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+  }
+  .flex-item:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .flex-item div{
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+/* WORK SECTION STYLE END*/
+
+/* CONTACT SECTION STYLE BEGIN */
